@@ -1,0 +1,80 @@
+site_name: Заметки и конспекты
+site_description: netbase
+site_author: rootlog
+
+repo_name: rootlog
+repo_url: https://github.com/kumequsire/rootlog
+
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.sane_lists
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.def_list
+  - markdown.extensions.abbr
+  - markdown.extensions.tables
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.toc:
+      permalink: True
+      separator: "_"
+  - pymdownx.extra
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Переключить на светлую тему
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Переключить на темную тему
+  font:
+    text: "Roboto"
+    code: "Roboto Mono"
+  features:
+    - tabs
+    - instant
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      type: timeago
+  - awesome-pages:
+      collapse_single_pages: true
+      strict: false
+
+copyright: "rootlog &copy; 2026"
