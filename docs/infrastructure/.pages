@@ -1,4 +1,5 @@
 title: "Инфраструктура и Серверы"
 nav:
+    - colocation.md
     - raid.md
     - virtualization.md
